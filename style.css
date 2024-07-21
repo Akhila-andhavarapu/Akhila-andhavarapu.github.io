@@ -148,13 +148,9 @@ section#contact {
     align-items: flex-start;
 }
 
-.contact-form {
-    flex: 1;
-    margin-right: 20px;
-}
-
 .contact-info {
     flex: 1;
+    margin-right: 20px;
 }
 
 .contact-info p {
@@ -170,24 +166,28 @@ section#contact {
     text-decoration: underline;
 }
 
-section#contact form {
+.contact-form {
+    flex: 1;
+}
+
+.contact-form form {
     display: flex;
     flex-direction: column;
 }
 
-section#contact form label {
+.contact-form form label {
     margin-bottom: 5px;
 }
 
-section#contact form input,
-section#contact form textarea {
+.contact-form form input,
+.contact-form form textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-section#contact form button {
+.contact-form form button {
     padding: 10px;
     background: #333;
     color: #fff;
@@ -197,7 +197,7 @@ section#contact form button {
     transition: background 0.3s, color 0.3s;
 }
 
-section#contact form button:hover {
+.contact-form form button:hover {
     background: #fff;
     color: #333;
 }
