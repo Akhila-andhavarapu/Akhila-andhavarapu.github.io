@@ -140,25 +140,18 @@ section#projects .project {
     background: #1abc9c;
 }
 
-.creative-list li.skill-item::before {
-    background: #fff;
-}
+
 
 .creative-list li.achievement-item {
     background: #e74c3c;
 }
 
-.creative-list li.achievement-item::before {
-    background: #fff;
-}
 
 .creative-list li.experience-item {
     background: #3498db;
 }
 
-.creative-list li.experience-item::before {
-    background: #fff;
-}
+
 
 section#contact {
     display: flex;
