@@ -8,7 +8,7 @@
 body {
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #283048, #859398);
     background-attachment: fixed;
 }
 
@@ -38,6 +38,13 @@ header h1 {
     float: left;
     margin-top: 15px;
     font-size: 24px;
+}
+
+header p {
+    float: left;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ddd;
 }
 
 header nav {
@@ -76,6 +83,7 @@ section {
 
 section#about,
 section#projects,
+section#skills,
 section#contact {
     background: rgba(0, 0, 0, 0.6);
     padding: 30px;
@@ -93,6 +101,21 @@ section h2 {
 section#projects .project {
     margin-bottom: 20px;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+section#skills ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
