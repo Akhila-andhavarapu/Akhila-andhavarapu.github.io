@@ -108,42 +108,66 @@ section#projects .project {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section#skills .skills-item,
-section#achievements .achievements-item,
-section#experience .experience-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section#skills .skills-item {
-    color: #fff;
-}
-
-section#achievements .achievements-item {
-    color: #fff;
-}
-
-section#experience .experience-item {
-    color: #fff;
-}
-
-section#skills ul,
-section#achievements ul,
-section#experience ul {
+.creative-list {
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
-section#skills ul li,
-section#achievements ul li,
-section#experience ul li {
+.creative-list li {
     margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
     font-size: 16px;
-    color: #fff;
+}
+
+.creative-list li::before {
+    content: '•';
+    position: absolute;
+    left: -20px;
+    font-size: 24px;
+    color: #f39c12;
+}
+
+.creative-list li.skill-item::before {
+    color: #1abc9c;
+}
+
+.creative-list li.achievement-item::before {
+    color: #e74c3c;
+}
+
+.creative-list li.experience-item::before {
+    color: #3498db;
+}
+
+section#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 section#contact form {
@@ -186,17 +210,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-footer .contact-info p {
-    margin: 5px 0;
-}
-
-footer .contact-info a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-footer .contact-info a:hover {
-    text-decoration: underline;
 }
