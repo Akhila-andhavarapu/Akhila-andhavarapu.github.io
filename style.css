@@ -76,25 +76,6 @@ header nav ul li a:hover {
     color: #333;
 }
 
-header .contact-info {
-    float: left;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-
-header .contact-info p {
-    margin: 5px 0;
-}
-
-header .contact-info a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-header .contact-info a:hover {
-    text-decoration: underline;
-}
-
 section {
     padding: 40px 0;
     color: #fff;
@@ -127,6 +108,28 @@ section#projects .project {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section#skills .skills-item,
+section#achievements .achievements-item,
+section#experience .experience-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#skills .skills-item {
+    color: #fff;
+}
+
+section#achievements .achievements-item {
+    color: #fff;
+}
+
+section#experience .experience-item {
+    color: #fff;
+}
+
 section#skills ul,
 section#achievements ul,
 section#experience ul {
@@ -138,20 +141,9 @@ section#experience ul {
 section#skills ul li,
 section#achievements ul li,
 section#experience ul li {
-    display: inline-block;
-    margin: 10px 20px;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
-section#skills ul li:hover,
-section#achievements ul li:hover,
-section#experience ul li:hover {
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
 }
 
 section#contact form {
@@ -194,4 +186,17 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer .contact-info a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer .contact-info a:hover {
+    text-decoration: underline;
 }
